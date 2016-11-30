@@ -1,6 +1,10 @@
+import os
+import sys
+import time
 import praw
 import matplotlib.pyplot as plt
 import numpy as np
+from urllib.parse import urlparse
 
 # median deviation filter
 # taken from the internet, remember that
@@ -30,10 +34,27 @@ reddit = praw.Reddit(user_agent = my_user_agent,
                         username = my_username,
                         password = my_password)
 
+url = "https://www.reddit.com/r/LiverpoolFC/comments/5fle7i/woodburn_goal_vs_leeds_20/"
+# break up URL into components using urlparse()
+parsedURL = urlparse(url) # parsedURL[2] is the index for the path
+parsedPath = parsedURL[2]
+print(parsedURL)
+print(parsedPath)
+
+# break up path using os.sep
+parsedPath = parsedPath(os.sep)
+print(parsedPath)
+
+
+print("Exiting for testing URL parser...")
+time.sleep(1)
+sys.exit("See ya!")
+
+
 # get ID from user and save submission from ID
-subID = input("What is the submission ID of the post you want to search?: ")
-submission = reddit.submission(id=subID)
-print("Submission title: ",     submission.title)  # Output: the title of the submission
+# subID = input("What is the submission ID of the post you want to search?: ")
+# submission = reddit.submission(id=subID)
+# print("Submission title: ",     submission.title)  # Output: the title of the submission
 
 scoreList = [] # holds all score values
 count = 0
