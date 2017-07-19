@@ -5,4 +5,4 @@ The program logs in to reddit, accepts a submission id from user input, tallies 
 
 
 
-![Sample graph](VoteCount/exampleGraph.png)
+![Sample graph](https://raw.githubusercontent.com/spacegoats/VoteCount/master/exampleGraph.png)
