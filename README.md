@@ -3,6 +3,6 @@ A simple script using PRAW to scrape a reddit submission for comment scores and 
 
 The program logs in to reddit, accepts a submission id from user input, tallies all comment scores and then outputs a graph using matplotlib.
 
-Sample Graph
 
-![Screenshot](https://s3-us-west-2.amazonaws.com/s.cdpn.io/413084/exampleGraph.tiff)
+
+![Sample graph](VoteCount/exampleGraph.png)
