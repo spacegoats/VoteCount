@@ -5,4 +5,4 @@ The program logs in to reddit, accepts a submission id from user input, tallies 
 
 Sample Graph
 
-![Alt text](https://s3-us-west-2.amazonaws.com/s.cdpn.io/413084/exampleGraph.tiff)
+![Screenshot](https://s3-us-west-2.amazonaws.com/s.cdpn.io/413084/exampleGraph.tiff)
